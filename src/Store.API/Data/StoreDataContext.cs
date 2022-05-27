@@ -14,7 +14,6 @@ namespace Store.API.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //optionsBuilder.UseSqlServer(@"Server=localhost,1433;Database=prodcat;User ID=SA;Password=1q2w3e%&!");
             optionsBuilder.UseInMemoryDatabase(databaseName: "StoreDBTest");
         }
 
